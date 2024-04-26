@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-scroll'
 import {
   Drawer,
@@ -23,14 +23,30 @@ import {
 
 
 const Navbar = () => {
+  const [scrolled,setScrolled]=useState(false)
+  useEffect(() => {
+    const checkScroll = () => {
+      if (window.scrollY >= 460) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', checkScroll);
+
+    return () => {
+      window.removeEventListener('scroll', checkScroll);
+    };
+  }, []);
   return (
-    <div className=' bg-[#000000] bg-opacity-[80%] flex flex-row justify-center items-center gap-4 w-full  font-montserrat fixed '>
-<div className='text-white pr-[20rem]'>Sushma</div>
+    <div className={` bg-[#000000] flex flex-row justify-center items-center $ {scrolled ? (bg-opacity-[100%])  : (bg-opacity-[80%])} gap-4 w-full  font-montserrat fixed`}>
+<div className='text-white text-4xl pr-[20rem]'>Sushma</div>
 <div>
 <NavigationMenu >
   <NavigationMenuList>
   <NavigationMenuItem >
-  <Link to ='/' smooth={true} duration={1000}>   <NavigationMenuTrigger className='bg-black text-white'>Home</NavigationMenuTrigger></Link>
+  <Link to ='/' smooth={true} duration={1000}>   <NavigationMenuTrigger className='bg-[#000000] text-white'>Home</NavigationMenuTrigger></Link>
       {/* <NavigationMenuContent>
         <NavigationMenuLink>{<About/>}</NavigationMenuLink>
       </NavigationMenuContent> */}
