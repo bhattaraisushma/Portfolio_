@@ -30,7 +30,7 @@ const Home = () => {
         }),
       ]} >
   <CarouselContent  className='h-[25rem]  w-[25rem] rounded-3xl border-2 border-solid  '>
-    <CarouselItem  ><img src ="./sush.jpeg"  style={{height:"25rem", width:"25rem", objectFit:"cover"}}  ></img></CarouselItem>
+    <CarouselItem  ><img src ="./sush.jpeg"  style={{height:"25rem", width:"25rem", objectFit:"cover", resize:"horizontal"}}  ></img></CarouselItem>
     <CarouselItem className=''><img src ="./sushma.jpg"  ></img></CarouselItem>
     <CarouselItem className=''><img src ="./sush.jpeg"   style={{height:"25rem", width:"25rem", objectFit:"cover"}} ></img></CarouselItem>
   </CarouselContent>
