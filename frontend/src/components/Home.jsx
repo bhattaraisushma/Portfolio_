@@ -24,15 +24,15 @@ const Home = () => {
       </div> 
      <div className=' flex justify-center items-center   h-full w-[50%] '>
     <div className=''>
-     <Carousel  className='h-[20rem]  w-[20rem] rounded-2xl border-2 border-solid ' plugins={[
+     <Carousel  plugins={[
         Autoplay({
           delay: 3000,
         }),
       ]} >
-  <CarouselContent className='h-full w-full'>
-    <CarouselItem ><img src ="./public/Bg.jpg"   ></img></CarouselItem>
-    <CarouselItem><img src ="./public/Bg.jpg"  ></img></CarouselItem>
-    <CarouselItem><img src ="./public/Bg.jpg"  ></img></CarouselItem>
+  <CarouselContent  className='h-[25rem]  w-[25rem] rounded-3xl border-2 border-solid  '>
+    <CarouselItem  ><img src ="./sush.jpeg"  style={{height:"25rem", width:"25rem", objectFit:"cover"}}  ></img></CarouselItem>
+    <CarouselItem className=''><img src ="./sushma.jpg"  ></img></CarouselItem>
+    <CarouselItem className=''><img src ="./sush.jpeg"   style={{height:"25rem", width:"25rem", objectFit:"cover"}} ></img></CarouselItem>
   </CarouselContent>
   <CarouselPrevious />
   <CarouselNext />

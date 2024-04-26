@@ -20,8 +20,8 @@ import {
   NavigationMenuTrigger,
   NavigationMenuViewport,
 } from "@/components/ui/navigation-menu"
-
-
+import {  LucideHome,LucideContact } from 'lucide-react'
+import { FacebookIcon,InstagramIcon,LinkedinIcon } from 'lucide-react'
 const Navbar = () => {
   const [scrolled,setScrolled]=useState(false)
   useEffect(() => {
@@ -46,31 +46,29 @@ const Navbar = () => {
 <NavigationMenu >
   <NavigationMenuList>
   <NavigationMenuItem >
-  <Link to ='/' smooth={true} duration={1000}>   <NavigationMenuTrigger className='bg-[#000000] text-white'>Home</NavigationMenuTrigger></Link>
+  <Link to ='/' smooth={true} duration={1000}>   <NavigationMenuTrigger className='bg-[#000000] text-white'><LucideHome/>Home</NavigationMenuTrigger></Link>
       {/* <NavigationMenuContent>
         <NavigationMenuLink>{<About/>}</NavigationMenuLink>
       </NavigationMenuContent> */}
     </NavigationMenuItem>
     <NavigationMenuItem >
     <Link to='/about' duration={1000} smooth={true}> <NavigationMenuTrigger className='bg-black text-white'>About</NavigationMenuTrigger></Link>
-      {/* <NavigationMenuContent>
-        <NavigationMenuLink>{<About/>}</NavigationMenuLink>
-      </NavigationMenuContent> */}
+    
     </NavigationMenuItem>
-  {/* </NavigationMenuList>
-  <NavigationMenuList> */}
-    <NavigationMenuItem>
-      <NavigationMenuTrigger className='bg-black text-white'>Skills</NavigationMenuTrigger>
-      {/* <NavigationMenuContent>
-        <NavigationMenuLink></NavigationMenuLink>
-      </NavigationMenuContent>
-    */}
-  <Drawer >
-  <DrawerTrigger className='bg-black text-white'>Contact</DrawerTrigger>
-  <DrawerContent>
-    <DrawerHeader className='h-[25rem]'>
-      <DrawerTitle>Are you absolutely sure?</DrawerTitle>
-      <DrawerDescription>This action cannot be undone.</DrawerDescription>
+    <Drawer >
+  <DrawerTrigger className='bg-black text-white flex flex-row  ml-4'>
+  <LucideContact/>
+    Contact</DrawerTrigger>
+  <DrawerContent className="border-2 border-solid border-black "> 
+    <DrawerHeader className='h-[12rem] flex  flex-col justify-center items-center gap-10'>
+      <DrawerTitle className='text-3xl'>Find me on</DrawerTitle>
+      <DrawerDescription className='flex flex-row   gap-5'><a href="https://www.facebook.com/sushma.bhattarai.3532/"><FacebookIcon /></a> 
+ 
+      <a href='https://www.instagram.com/sush_ma___/'> <InstagramIcon/></a>
+      <a href='https://www.linkedin.com/in/sushma-bhattarai-b04712212/'>  <LinkedinIcon/></a>
+  
+      
+      </DrawerDescription>
     </DrawerHeader>
     <DrawerFooter> 
       <DrawerClose>
@@ -78,6 +76,11 @@ const Navbar = () => {
     </DrawerFooter>
   </DrawerContent>
 </Drawer>
+ 
+  
+    <NavigationMenuItem>
+      <NavigationMenuTrigger className='bg-black text-white'>Skills</NavigationMenuTrigger>
+   
 </NavigationMenuItem>
   </NavigationMenuList>
 </NavigationMenu>

@@ -10,7 +10,7 @@ const About = () => {
     </div>
     {/* <div className=''> */}
       <div className='h-[40rem] w-[30rem] flex justify-center items-center bg-red'>
-      <img src='./Bg.jpg' className='rounded-3xl h-[30rem]'></img>
+      <img src='./sushma.jpg' className='rounded-3xl h-[30rem]'></img>
       {/* </div> */}
 
     </div>
