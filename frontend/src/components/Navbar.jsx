@@ -79,7 +79,7 @@ const Navbar = () => {
  
   
     <NavigationMenuItem>
-      <NavigationMenuTrigger className='bg-black text-white'>Skills</NavigationMenuTrigger>
+      <Link to ='/skill' smooth={true} duration={1000}><NavigationMenuTrigger className='bg-black text-white'>Skills</NavigationMenuTrigger></Link>
    
 </NavigationMenuItem>
   </NavigationMenuList>
