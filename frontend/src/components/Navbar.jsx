@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'react-scroll'
 import {
   Drawer,
   DrawerClose,
@@ -20,35 +20,35 @@ import {
   NavigationMenuTrigger,
   NavigationMenuViewport,
 } from "@/components/ui/navigation-menu"
-import About from './About'
+
 
 const Navbar = () => {
   return (
-    <div className='  flex flex-row justify-center items-center gap-4   font-montserrat  '>
+    <div className=' bg-[#000000] bg-opacity-[80%] flex flex-row justify-center items-center gap-4 w-full  font-montserrat fixed '>
 <div className='text-white pr-[20rem]'>Sushma</div>
 <div>
 <NavigationMenu >
   <NavigationMenuList>
   <NavigationMenuItem >
-      <NavigationMenuTrigger className='bg-black text-white'>Home</NavigationMenuTrigger>
+  <Link to ='/' smooth={true} duration={1000}>   <NavigationMenuTrigger className='bg-black text-white'>Home</NavigationMenuTrigger></Link>
       {/* <NavigationMenuContent>
         <NavigationMenuLink>{<About/>}</NavigationMenuLink>
       </NavigationMenuContent> */}
     </NavigationMenuItem>
     <NavigationMenuItem >
-      <NavigationMenuTrigger className='bg-black text-white'>About</NavigationMenuTrigger>
-      <NavigationMenuContent>
+    <Link to='/about' duration={1000} smooth={true}> <NavigationMenuTrigger className='bg-black text-white'>About</NavigationMenuTrigger></Link>
+      {/* <NavigationMenuContent>
         <NavigationMenuLink>{<About/>}</NavigationMenuLink>
-      </NavigationMenuContent>
+      </NavigationMenuContent> */}
     </NavigationMenuItem>
   {/* </NavigationMenuList>
   <NavigationMenuList> */}
     <NavigationMenuItem>
       <NavigationMenuTrigger className='bg-black text-white'>Skills</NavigationMenuTrigger>
-      <NavigationMenuContent>
+      {/* <NavigationMenuContent>
         <NavigationMenuLink></NavigationMenuLink>
       </NavigationMenuContent>
-   
+    */}
   <Drawer >
   <DrawerTrigger className='bg-black text-white'>Contact</DrawerTrigger>
   <DrawerContent>
