@@ -41,9 +41,12 @@ const Navbar = () => {
   }, []);
   return (
     <div className={` bg-[#000000] flex flex-row justify-center items-center $ {scrolled ? (bg-opacity-[100%])  : (bg-opacity-[80%])} gap-4 w-full  font-montserrat fixed`}>
-<div className='text-white text-4xl pr-[20rem]'>Sushma</div>
+<div className='text-white text-3xl pr-[20rem] flex flex-row'>Sushma
+
+</div>
+
 <div>
-<NavigationMenu >
+<NavigationMenu>
   <NavigationMenuList>
   <NavigationMenuItem >
   <Link to ='/' smooth={true} duration={1000}>   <NavigationMenuTrigger className='bg-[#000000] text-white'><LucideHome/>Home</NavigationMenuTrigger></Link>
