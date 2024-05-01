@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-scroll'
+import resume from '../resume.pdf'
 import {
   Drawer,
   DrawerClose,
@@ -83,7 +84,7 @@ const Navbar = () => {
   
     <NavigationMenuItem>
       <Link to ='/skill' smooth={true} duration={1000}><NavigationMenuTrigger className='bg-black text-white'>Skills</NavigationMenuTrigger></Link>
-   
+   <a href="./resume.pdf" download={resume.pdf}>Resume</a>
 </NavigationMenuItem>
   </NavigationMenuList>
 </NavigationMenu>
