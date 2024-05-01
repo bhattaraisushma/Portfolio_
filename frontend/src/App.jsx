@@ -13,7 +13,8 @@ function App() {
   return(
    
   
-    <div  className='overflow-x-hidden'>
+    <div  className='overflow-x-hidden bg-bgimg'>
+      <div className='h-full bg-black bg-opacity-[80%]'>
 <BrowserRouter>
 <Navbar/>
 <Routes>
@@ -26,6 +27,7 @@ function App() {
   {/* <Home/>
 <About/>
 <Skill/> */}
+    </div>
     </div>
   )
 }

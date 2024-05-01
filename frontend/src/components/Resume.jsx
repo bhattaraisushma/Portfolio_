@@ -2,8 +2,13 @@ import React from 'react'
 
 const Resume = () => {
   return (
-    <div id='/resume' className='bg-red-200 h-screen w-full text-stone-100'>
-      hello
+    <div id='/resume' className='bg-bgimg h-fit w-full text-stone-100  '>
+      <div className='bg-black bg-opacity-[80%] h-fit w-full flex flex-col  justify-center items-center gap-5 pt-[4rem]'>
+     
+       <img src='./resume.png'></img>
+       <button className=' bg-white rounded-2xl  text-black h-[3rem] w-[10rem] '> 
+        <a href='resume.pdf' download >Download resume</a></button>
+      </div>
     </div>
   )
 }
