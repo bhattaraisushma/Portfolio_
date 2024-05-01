@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-scroll'
-import resume from '../resume.pdf'
+
 import {
   Drawer,
   DrawerClose,
@@ -23,6 +23,7 @@ import {
 } from "@/components/ui/navigation-menu"
 import {  LucideHome,LucideContact } from 'lucide-react'
 import { FacebookIcon,InstagramIcon,LinkedinIcon } from 'lucide-react'
+import { NavLink } from 'react-router-dom'
 const Navbar = () => {
   const [scrolled,setScrolled]=useState(false)
   useEffect(() => {
@@ -50,7 +51,11 @@ const Navbar = () => {
 <NavigationMenu>
   <NavigationMenuList>
   <NavigationMenuItem >
-  <Link to ='/' smooth={true} duration={1000}>   <NavigationMenuTrigger className='bg-[#000000] text-white'><LucideHome/>Home</NavigationMenuTrigger></Link>
+  <Link to ='/' smooth={true} duration={1000}> 
+  <NavLink to ='/'>
+    <NavigationMenuTrigger className='bg-[#000000] text-white'><LucideHome/>Home</NavigationMenuTrigger>
+    </NavLink>
+    </Link>
       {/* <NavigationMenuContent>
         <NavigationMenuLink>{<About/>}</NavigationMenuLink>
       </NavigationMenuContent> */}
@@ -83,8 +88,16 @@ const Navbar = () => {
  
   
     <NavigationMenuItem>
-      <Link to ='/skill' smooth={true} duration={1000}><NavigationMenuTrigger className='bg-black text-white'>Skills</NavigationMenuTrigger></Link>
-   <a href="./resume.pdf" download={resume.pdf}>Resume</a>
+      <Link to ='/skill' smooth={true} duration={1000}>
+        
+        <NavigationMenuTrigger className='bg-black text-white'>Skills</NavigationMenuTrigger></Link>
+ 
+</NavigationMenuItem>
+<NavigationMenuItem>
+      <NavLink to ='/resume' smooth={true} duration={1000}>
+        
+        <NavigationMenuTrigger className='bg-black text-white'>Resume</NavigationMenuTrigger></NavLink>
+ 
 </NavigationMenuItem>
   </NavigationMenuList>
 </NavigationMenu>

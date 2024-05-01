@@ -8,12 +8,14 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel"
 import Autoplay from "embla-carousel-autoplay"
+import About from './About'
+import Skill from './Skill'
 
 const Home = () => {
   return (
     <>
          <div className='bg-bgimg h-screen w-screen bg-cover   bg-no-repeat text-white' id ='/'>
-         <Navbar/>
+    
     <div className="bg-[#000000] bg-opacity-[80%] h-screen w-screen z-0 pl-[10rem]" >
   
 <div className='flex flex-row justify-between items-center h-full w-full '>
@@ -43,6 +45,8 @@ const Home = () => {
   
     </div>
     </div>
+    <About/>
+    <Skill/>
     </>
   )
 }
