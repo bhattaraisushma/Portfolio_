@@ -25,6 +25,7 @@ import {  LucideHome,LucideContact } from 'lucide-react'
 import { FacebookIcon,InstagramIcon,LinkedinIcon } from 'lucide-react'
 import { NavLink } from 'react-router-dom'
 const Navbar = () => {
+  const [issmall,setIssmall]=useState(false)
   const [scrolled,setScrolled]=useState(false)
   useEffect(() => {
     const checkScroll = () => {
@@ -34,6 +35,12 @@ const Navbar = () => {
         setScrolled(false);
       }
     };
+    if(window.innerWidth<=768){
+      setIssmall(true)
+    }
+    else{
+      setIssmall(false)
+    }
 
     window.addEventListener('scroll', checkScroll);
 
@@ -48,6 +55,7 @@ const Navbar = () => {
 </div>
 
 <div>
+  {!issmall ? (
 <NavigationMenu>
   <NavigationMenuList>
   <NavigationMenuItem >
@@ -101,6 +109,9 @@ const Navbar = () => {
 </NavigationMenuItem>
   </NavigationMenuList>
 </NavigationMenu>
+  ):(
+    null
+  )}
 
 </div>
 </div>

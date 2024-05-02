@@ -16,7 +16,7 @@ const Home = () => {
     <>
          <div className='bg-bgimg md:h-screen h-fit w-screen bg-cover md:mb-0 mb-[14rem]  bg-no-repeat text-white' id ='/'>
     
-    <div className="bg-[#000000] bg-opacity-[80%] md:h-screen h-fit w-screen  pl-[10rem]" >
+    <div className="bg-[#000000] bg-opacity-[80%] md:h-screen h-fit w-screen  md:pl-[10rem]" >
   
 <div className='flex md:flex-row flex-col md:justify-between gap-2 md:items-center md:h-full w-screen h-fit pt-[14rem]  '>
     
