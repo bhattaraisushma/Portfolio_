@@ -20,11 +20,11 @@ const Home = () => {
   
 <div className='flex md:flex-row flex-col md:justify-between gap-2 md:items-center md:h-full w-screen h-fit pt-[14rem]  '>
     
-    <div className='flex flex-col gap-9  w-[50%]  pr-[5rem] '>
+    <div className='flex flex-col gap-9  md:w-[50%] w-full md:pr-[5rem] items-center'>
     <h1  className='md:text-5xl text-3xl font-semibold'>Sushma Bhattarai</h1>
     <h2 className='md:text-3xl text-xl'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, quae?</h2>
       </div> 
-     <div className=' flex justify-center items-center   md:h-full w-[50%]  '>
+     <div className=' flex justify-center items-center   md:h-full md:w-[50%] w-full  '>
     <div className=''>
      <Carousel  plugins={[
         Autoplay({

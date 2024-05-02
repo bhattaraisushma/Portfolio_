@@ -9,15 +9,15 @@ import {
 import { Progress } from "@/components/ui/progress"
 const Skill = () => {
   return (
-    <div className='h-screen w-full text-3xl gap-[5rem] flex    bg-bgimg bg-cover bg-no-repeat font-montserrat text-white' id='/skill'>
-    <div className='bg-[#000000] bg-opacity-[85%] h-screen w-full  flex justify-start p-[5rem] items-center'>
-    <div  className=' h-[30rem] w-[40rem]  rounded-2xl p-5 '>
+    <div className='md:h-screen h-fit w-full text-3xl gap-[5rem] flex    bg-bgimg bg-cover bg-no-repeat font-montserrat text-white' id='/skill'>
+    <div className='bg-[#000000] bg-opacity-[85%] h-screen w-full  flex justify-start p-[5rem] md:items-center md:top-0 pt-[16rem]'>
+    <div  className=' h-[30rem] w-[40rem rounded-2xl p-5 '>
     <Accordion type="single" collapsible>
   <AccordionItem value="item-1">
     <AccordionTrigger>Html</AccordionTrigger>
     <AccordionContent>
    
-    <Progress value={70} className='w-[40rem] '  />
+    <Progress value={70} className='md:w-[40rem] w-[20rem]'  />
    
     </AccordionContent>
   </AccordionItem>
@@ -27,7 +27,7 @@ const Skill = () => {
     <AccordionTrigger>CSS</AccordionTrigger>
     <AccordionContent>
    
-    <Progress value={80} className='w-[40rem] '  />
+    <Progress value={80} className='md:w-[40rem] w-[20rem] '  />
    
     </AccordionContent>
   </AccordionItem>
@@ -37,7 +37,7 @@ const Skill = () => {
     <AccordionTrigger>React Js</AccordionTrigger>
     <AccordionContent>
    
-    <Progress value={75} className='w-[40rem] '  />
+    <Progress value={75} className='md:w-[40rem] w-[20rem]'  />
    
     </AccordionContent>
   </AccordionItem>
@@ -47,7 +47,7 @@ const Skill = () => {
     <AccordionTrigger>Node Js</AccordionTrigger>
     <AccordionContent>
    
-    <Progress value={45} className='w-[40rem] '  />
+    <Progress value={45} className='md:w-[40rem] w-[20rem] '  />
    
     </AccordionContent>
   </AccordionItem>
