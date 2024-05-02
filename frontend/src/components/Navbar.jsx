@@ -29,7 +29,7 @@ import {
   NavigationMenuViewport,
 } from "@/components/ui/navigation-menu"
 import {  LucideHome,LucideContact } from 'lucide-react'
-import { FacebookIcon,InstagramIcon,LinkedinIcon } from 'lucide-react'
+import { FacebookIcon,InstagramIcon,LinkedinIcon,Menu } from 'lucide-react'
 import { NavLink } from 'react-router-dom'
 const Navbar = () => {
   const [issmall,setIssmall]=useState(false)
@@ -125,9 +125,9 @@ const Navbar = () => {
   ):(
     <NavigationMenu>
   <NavigationMenuList>
-    <DropdownMenu >
-    <DropdownMenuTrigger>Open</DropdownMenuTrigger>
-    <DropdownMenuContent >
+    <DropdownMenu  >
+    <DropdownMenuTrigger><Menu/></DropdownMenuTrigger>
+    <DropdownMenuContent className=' bg-black' >
       <DropdownMenuLabel>
 
       <NavigationMenuItem >
@@ -165,7 +165,32 @@ const Navbar = () => {
         <NavigationMenuTrigger className='bg-black text-white'>About</NavigationMenuTrigger></Link>
  
 </NavigationMenuItem></DropdownMenuItem>
-      <DropdownMenuItem>Subscription</DropdownMenuItem>
+      <DropdownMenuItem>
+
+      <Drawer >
+  <DrawerTrigger className='bg-black text-white flex flex-row  ml-4'>
+  <LucideContact/>
+    Contact</DrawerTrigger>
+  <DrawerContent className="border-2 border-solid border-black "> 
+    <DrawerHeader className='h-[12rem] flex  flex-col justify-center items-center gap-10'>
+      <DrawerTitle className='text-3xl'>Find me on</DrawerTitle>
+      <DrawerDescription className='flex flex-row   gap-5'><a href="https://www.facebook.com/sushma.bhattarai.3532/"><FacebookIcon /></a> 
+ 
+      <a href='https://www.instagram.com/sush_ma___/'> <InstagramIcon/></a>
+      <a href='https://www.linkedin.com/in/sushma-bhattarai-b04712212/'>  <LinkedinIcon/></a>
+  
+      
+      </DrawerDescription>
+    </DrawerHeader>
+    <DrawerFooter> 
+      <DrawerClose>
+      </DrawerClose>
+    </DrawerFooter>
+  </DrawerContent>
+</Drawer>
+ 
+
+      </DropdownMenuItem>
     </DropdownMenuContent>
   </DropdownMenu>
   </NavigationMenuList>
