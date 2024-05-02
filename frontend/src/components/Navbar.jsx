@@ -31,6 +31,7 @@ import {
 import {  LucideHome,LucideContact } from 'lucide-react'
 import { FacebookIcon,InstagramIcon,LinkedinIcon,Menu } from 'lucide-react'
 import { NavLink } from 'react-router-dom'
+import { Dialog } from '@radix-ui/react-dialog'
 const Navbar = () => {
   const [issmall,setIssmall]=useState(false)
   const [scrolled,setScrolled]=useState(false)
@@ -164,13 +165,17 @@ const Navbar = () => {
         
         <NavigationMenuTrigger className='bg-black text-white'>Projects</NavigationMenuTrigger></Link>
  
-</NavigationMenuItem></DropdownMenuItem>
-      <DropdownMenuItem>
+</NavigationMenuItem>
+</DropdownMenuItem>
+
+     
 
       <Drawer >
   <DrawerTrigger className='bg-black text-white flex flex-row  ml-4'>
+  
   <LucideContact/>
     Contact</DrawerTrigger>
+    <DropdownMenuItem>
   <DrawerContent className="border-2 border-solid border-black "> 
     <DrawerHeader className='h-[12rem] flex  flex-col justify-center items-center gap-10'>
       <DrawerTitle className='text-3xl'>Find me on</DrawerTitle>
@@ -187,10 +192,12 @@ const Navbar = () => {
       </DrawerClose>
     </DrawerFooter>
   </DrawerContent>
+  </DropdownMenuItem>
 </Drawer>
  
 
-      </DropdownMenuItem>
+      
+      
       <DropdownMenuLabel>
 
 
