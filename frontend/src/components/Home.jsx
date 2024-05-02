@@ -18,7 +18,7 @@ const Home = () => {
     
     <div className="bg-[#000000] bg-opacity-[80%] md:h-screen h-fit w-screen  md:pl-[10rem]" >
   
-<div className='flex md:flex-row flex-col md:justify-between gap-2 md:items-center md:h-full w-screen h-fit pt-[14rem]  '>
+<div className='flex md:flex-row flex-col md:justify-between gap-2 md:items-center md:h-full w-screen h-fit pt-[6rem]  '>
     
     <div className='flex flex-col gap-9  md:w-[50%] w-full md:pr-[5rem] items-center'>
     <h1  className='md:text-5xl text-3xl font-semibold'>Sushma Bhattarai</h1>
@@ -31,7 +31,7 @@ const Home = () => {
           delay: 3000,
         }),
       ]} >
-  <CarouselContent  className='h-[25rem]  w-[25rem] rounded-3xl border-2 border-solid  '>
+  <CarouselContent  className='h-[25rem]  w-[25rem] rounded-3xl border-2 border-solid  pr-3 '>
     <CarouselItem  ><img src ="./sush.jpeg"  style={{height:"25rem", width:"25rem", objectFit:"cover", resize:"horizontal"}}  ></img></CarouselItem>
     <CarouselItem className=''><img src ="./sushma.jpg"  ></img></CarouselItem>
     <CarouselItem className=''><img src ="./sush.jpeg"   style={{height:"25rem", width:"25rem", objectFit:"cover"}} ></img></CarouselItem>

@@ -64,8 +64,8 @@ const Navbar = () => {
     };
   }, []);
   return (
-    <div className={` bg-[#000000] flex flex-row justify-center items-center $ {scrolled ? (bg-opacity-[100%])  : (bg-opacity-[80%])} gap-4 w-full  font-montserrat fixed`}>
-<div className='text-white text-3xl pr-[20rem] flex flex-row'>Sushma
+    <div className={` bg-[#000000] flex flex-row md:justify-center justify-between px-[3rem] items-center $ {scrolled ? (bg-opacity-[100%])  : (bg-opacity-[80%])} gap-4 w-full  font-montserrat fixed`}>
+<div className='text-white text-3xl md:pr-[20rem]  flex flex-row '>Sushma
 
 </div>
 
@@ -162,7 +162,7 @@ const Navbar = () => {
       <DropdownMenuItem>  <NavigationMenuItem>
       <Link to ='/skill' smooth={true} duration={1000}>
         
-        <NavigationMenuTrigger className='bg-black text-white'>About</NavigationMenuTrigger></Link>
+        <NavigationMenuTrigger className='bg-black text-white'>Projects</NavigationMenuTrigger></Link>
  
 </NavigationMenuItem></DropdownMenuItem>
       <DropdownMenuItem>
@@ -191,7 +191,21 @@ const Navbar = () => {
  
 
       </DropdownMenuItem>
+      <DropdownMenuLabel>
+
+
+<NavigationMenuItem>
+      <NavLink to ='/resume' smooth={true} duration={1000}>
+        
+        <NavigationMenuTrigger className='bg-black text-white'>Resume</NavigationMenuTrigger></NavLink>
+ 
+
+
+</NavigationMenuItem>
+
+</DropdownMenuLabel>
     </DropdownMenuContent>
+    
   </DropdownMenu>
   </NavigationMenuList>
   </NavigationMenu>
