@@ -14,15 +14,15 @@ import Skill from './Skill'
 const Home = () => {
   return (
     <>
-         <div className='bg-bgimg h-screen w-screen bg-cover   bg-no-repeat text-white' id ='/'>
+         <div className='bg-bgimg md:h-screen h-fit w-screen bg-cover md:mb-0 mb-[14rem]  bg-no-repeat text-white' id ='/'>
     
-    <div className="bg-[#000000] bg-opacity-[80%] h-screen w-screen z-0 pl-[10rem] " >
+    <div className="bg-[#000000] bg-opacity-[80%] md:h-screen h-fit w-screen  pl-[10rem]" >
   
-<div className='flex md:flex-row flex-col md:justify-between gap-2 items-center h-full w-full   '>
+<div className='flex md:flex-row flex-col md:justify-between gap-2 md:items-center md:h-full w-screen h-fit pt-[14rem]  '>
     
-    <div className='flex flex-col gap-9   w-[50%] pr-[5rem] '>
-    <h1  className='text-5xl font-semibold'>Sushma Bhattarai</h1>
-    <h2 className='text-3xl'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, quae?</h2>
+    <div className='flex flex-col gap-9  w-[50%]  pr-[5rem] '>
+    <h1  className='md:text-5xl text-3xl font-semibold'>Sushma Bhattarai</h1>
+    <h2 className='md:text-3xl text-xl'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, quae?</h2>
       </div> 
      <div className=' flex justify-center items-center   md:h-full w-[50%]  '>
     <div className=''>
