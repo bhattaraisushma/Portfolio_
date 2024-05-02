@@ -42,17 +42,25 @@ const Navbar = () => {
         setScrolled(false);
       }
     };
-    if(window.innerWidth<=768){
-      setIssmall(true)
+  
+    const checkSize = () => {
+      if(window.innerWidth <= 768){
+        setIssmall(true)
+      }
+      else{
+        setIssmall(false)
+      }
     }
-    else{
-      setIssmall(false)
-    }
-
+  
+    // Call checkSize on mount and whenever window is resized
+    checkSize();
+    window.addEventListener('resize', checkSize);
+  
     window.addEventListener('scroll', checkScroll);
-
+  
     return () => {
       window.removeEventListener('scroll', checkScroll);
+      window.removeEventListener('resize', checkSize);
     };
   }, []);
   return (
@@ -71,9 +79,7 @@ const Navbar = () => {
     <NavigationMenuTrigger className='bg-[#000000] text-white'><LucideHome/>Home</NavigationMenuTrigger>
     </NavLink>
     </Link>
-      {/* <NavigationMenuContent>
-        <NavigationMenuLink>{<About/>}</NavigationMenuLink>
-      </NavigationMenuContent> */}
+     
     </NavigationMenuItem>
     <NavigationMenuItem >
     <Link to='/about' duration={1000} smooth={true}> <NavigationMenuTrigger className='bg-black text-white'>About</NavigationMenuTrigger></Link>
@@ -117,17 +123,54 @@ const Navbar = () => {
   </NavigationMenuList>
 </NavigationMenu>
   ):(
-    <DropdownMenu>
+    <NavigationMenu>
+  <NavigationMenuList>
+    <DropdownMenu >
     <DropdownMenuTrigger>Open</DropdownMenuTrigger>
-    <DropdownMenuContent>
-      <DropdownMenuLabel>My Account</DropdownMenuLabel>
+    <DropdownMenuContent >
+      <DropdownMenuLabel>
+
+      <NavigationMenuItem >
+  <Link to ='/' smooth={true} duration={1000}> 
+  <NavLink to ='/'>
+    <NavigationMenuTrigger className='bg-[#000000] text-white'><LucideHome/>Home</NavigationMenuTrigger>
+    </NavLink>
+    </Link>
+     
+    </NavigationMenuItem>
+
+      </DropdownMenuLabel>
       <DropdownMenuSeparator />
-      <DropdownMenuItem>Profile</DropdownMenuItem>
-      <DropdownMenuItem>Billing</DropdownMenuItem>
-      <DropdownMenuItem>Team</DropdownMenuItem>
+      <DropdownMenuItem>
+
+      <NavigationMenuItem >
+    <Link to='/about' duration={1000} smooth={true}> <NavigationMenuTrigger className='bg-black text-white'>About</NavigationMenuTrigger></Link>
+    
+    </NavigationMenuItem>
+
+      </DropdownMenuItem>
+      <DropdownMenuItem>
+      <NavigationMenuItem>
+      <Link to ='/skill' smooth={true} duration={1000}>
+        
+        <NavigationMenuTrigger className='bg-black text-white'>Skills</NavigationMenuTrigger></Link>
+ 
+</NavigationMenuItem>
+
+
+      </DropdownMenuItem>
+      <DropdownMenuItem>  <NavigationMenuItem>
+      <Link to ='/skill' smooth={true} duration={1000}>
+        
+        <NavigationMenuTrigger className='bg-black text-white'>About</NavigationMenuTrigger></Link>
+ 
+</NavigationMenuItem></DropdownMenuItem>
       <DropdownMenuItem>Subscription</DropdownMenuItem>
     </DropdownMenuContent>
   </DropdownMenu>
+  </NavigationMenuList>
+  </NavigationMenu>
+
   )}
 
 </div>
