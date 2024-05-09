@@ -22,7 +22,7 @@ const Home = () => {
     
     <div className='flex flex-col md:gap-9 gap-3 md:w-[50%] w-full  items-center'>
     <h1  className='md:text-5xl text-3xl font-semibold'>Sushma Bhattarai</h1>
-    <h2 className='md:text-3xl text-xl mb-6'>Web developer /Graphics Desinger</h2>
+    <h2 className='md:text-3xl text-xl mb-6'>Web developer /Graphics Designer</h2>
       </div> 
      <div className='  flex justify-center items-center   md:h-screen md:w-[50%] w-full   '>
     <div className=' '>
