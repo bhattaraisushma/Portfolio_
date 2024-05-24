@@ -10,6 +10,7 @@ import {
 import Autoplay from "embla-carousel-autoplay"
 import About from './About'
 import Skill from './Skill'
+import Project from './Project'
 
 const Home = () => {
   return (
@@ -46,6 +47,7 @@ const Home = () => {
     </div>
     </div>
     <About/>
+    <Project/>
     <Skill/>
     </>
   )

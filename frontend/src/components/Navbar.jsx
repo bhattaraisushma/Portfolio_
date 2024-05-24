@@ -121,6 +121,12 @@ const Navbar = () => {
         <NavigationMenuTrigger className='bg-black text-white'>Resume</NavigationMenuTrigger></NavLink>
  
 </NavigationMenuItem>
+<NavigationMenuItem>
+      <Link to ='/project' smooth={true} duration={1000}>
+        
+        <NavigationMenuTrigger className='bg-black text-white'>Projects</NavigationMenuTrigger></Link>
+ 
+</NavigationMenuItem>
   </NavigationMenuList>
 </NavigationMenu>
   ):(
@@ -160,8 +166,9 @@ const Navbar = () => {
 
 
       </DropdownMenuItem>
-      <DropdownMenuItem>  <NavigationMenuItem>
-      <Link to ='/skill' smooth={true} duration={1000}>
+      <DropdownMenuItem>  
+        <NavigationMenuItem>
+      <Link to ='/project' smooth={true} duration={1000}>
         
         <NavigationMenuTrigger className='bg-black text-white'>Projects</NavigationMenuTrigger></Link>
  
