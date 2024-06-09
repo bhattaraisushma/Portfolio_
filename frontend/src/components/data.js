@@ -12,5 +12,5 @@
     Title:"Furnitech",
     Description: "A website where you can buy furniture online.",
     image:'/furnitech.png',
-    link:"https://e-commerce-q8j8hu206-bhattaraisushmas-projects.vercel.app/"
+    link:"https://e-commerce-git-master-bhattaraisushmas-projects.vercel.app/"
 }]
