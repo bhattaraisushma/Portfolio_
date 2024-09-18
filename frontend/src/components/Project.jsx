@@ -5,7 +5,7 @@ const Project = () => {
   
     <div id='/project' className='md:h-screen w-full  flex flex-col  md:top-0 top-[4rem]'>
    <div className='font-montserrat text-3xl'>My Projects </div>
-   <div className='flex md:flex-row flex-col  justify-center md:gap-[16rem] gap-[6rem]  md:p-[6rem] p-6 '>
+   <div className='flex md:flex-row flex-col  justify-center md:gap-[8rem] gap-[6rem]  md:p-[6rem] p-6 '>
     {projects.map((project,index)=>(
 <div id={index} className='md:h-[35rem] h-fit md:w-[25rem]  w-fit p-3 font-montserrat flex flex-col gap-4 text-xl border-solid border-2 text-justify  rounded-[2rem] shadow-md shadow-white'>
     <h1 className='font-semibold text-3xl text-center'>{project.Title}</h1>

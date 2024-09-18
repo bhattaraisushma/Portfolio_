@@ -17,7 +17,7 @@
 },
 {
     Title:"Blogging Site",
-    images:"blog.png",
+    image:"/blog.png",
     Description:"CURRENTLY UNDER DEVELOPMENT. A website where you can write blogs and read blogs.",
     link:"https://blogging-git-master-bhattaraisushmas-projects.vercel.app/"
 }
