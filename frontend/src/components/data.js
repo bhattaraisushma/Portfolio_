@@ -24,3 +24,9 @@
 
 
 ]
+export const designs = [
+    {
+        Title:"Food UI",
+        image:'/Food UI.png',
+    }
+]
