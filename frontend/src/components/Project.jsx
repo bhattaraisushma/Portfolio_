@@ -12,7 +12,7 @@ const Project = () => {
     <h1 className='font-semibold text-3xl text-center'>{project.Title}</h1>
     <h1>{project.Description}</h1>
     <img src={project.image} className='my-10'></img>
-    <a href={project.link}>Visit Website</a>
+    <a href={project.link} className='italic underline '>Visit Website</a>
 
 </div>
     ))}
