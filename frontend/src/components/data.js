@@ -2,12 +2,18 @@
 
 
  export const  projects = [
+    { Title:'Blogify',
+        Description:"A website where you can write blogs and read blogs.",
+        image:'/blogify.png',
+        link:"https://blogify-bs1a.vercel.app/"},
+        
     {
         Title:"Furnitech",
         Description: "A website where you can buy furniture online.",
         image:'/furnitech.png',
         link:"https://e-commerce-git-master-bhattaraisushmas-projects.vercel.app/"
     },
+  
 //     {
 //     Title: "Ragat Nepal",
 //     Description: "A website where you can search for blood donors and request for blood donation. You can search for location too.",
