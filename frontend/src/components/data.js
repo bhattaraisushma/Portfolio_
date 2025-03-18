@@ -2,11 +2,11 @@
 
 
  export const  projects = [
-    { Title:'Blogify',
-        Description:"A website where you can write blogs and read blogs.",
-        image:'/blogify.png',
-        link:"https://blogify-bs1a.vercel.app/"},
-        
+    // { Title:'Blogify',
+    //     Description:"A website where you can write blogs and read blogs.",
+    //     image:'/blogify.png',
+    //     link:"https://blogify-bs1a.vercel.app/"},
+
     {
         Title:"Furnitech",
         Description: "A website where you can buy furniture online.",
