@@ -22,6 +22,12 @@
 //     link:"https://ragat-nepal-1edt-git-master-bhattaraisushmas-projects.vercel.app/"
 // },
 {
+    Title:"News Website",
+    Description:"A website created using the readily available news API. React js is used for frontend development and Vercel for deployment.",
+    image:"/newsite.png",
+    link:"https://news-site-one-pi.vercel.app/"
+},
+{
     Title:"Blogging Site",
     image:"/blog.png",
     Description:"CURRENTLY UNDER DEVELOPMENT. A website where you can write blogs and read blogs.",
