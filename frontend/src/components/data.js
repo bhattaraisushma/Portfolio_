@@ -6,6 +6,12 @@
     //     Description:"A website where you can write blogs and read blogs.",
     //     image:'/blogify.png',
     //     link:"https://blogify-bs1a.vercel.app/"},
+    {
+   Title:"Sikaii",
+        Description: "A platform for learning English. It is a beginner friendly site with the word quizes and sentence level quizes. It contains dictionary of words.It is Under Construction",
+        image:'/sikaii.png',
+        link:"https://learnify-fevv.vercel.app//"
+    },
 
     {
         Title:"Furnitech",
@@ -36,9 +42,9 @@
 
 
 ]
-export const designs = [
-    {
-        Title:"Food UI",
-        image:'/Food UI.png',
-    }
-]
+// export const designs = [
+//     {
+//         Title:"Food UI",
+//         image:'/Food UI.png',
+//     }
+// ]
