@@ -35,7 +35,7 @@ const Project = () => {
           //   <img src={design.image} className="my-10 h-[30rem] w-[20rem]"></img>
           //   {/* <a href={project.link}>Visit Website</a> */}
           // </div>
-      //   ))}
+      //   
       // </div>
     </div>
   );
