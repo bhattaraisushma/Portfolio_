@@ -7,7 +7,7 @@
     //     image:'/blogify.png',
     //     link:"https://blogify-bs1a.vercel.app/"},
     {
-   Title:"Sikaii",
+   Title:"Sikaii: The learning platform",
         Description: "A platform for learning English. It is a beginner friendly site with the word quizes and sentence level quizes. It contains dictionary of words.It is Under Construction",
         image:'/sikaii.png',
         link:"https://learnify-fevv.vercel.app//"
