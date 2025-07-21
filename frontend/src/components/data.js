@@ -10,7 +10,7 @@
    Title:"Sikaii: The learning platform",
         Description: "A platform for learning English. It is a beginner friendly site with the word quizes and sentence level quizes. It contains dictionary of words.It is Under Construction",
         image:'/sikaii.png',
-        link:"https://learnify-fevv.vercel.app//"
+        link:"https://sikaiii.vercel.app/"
     },
 
     {
